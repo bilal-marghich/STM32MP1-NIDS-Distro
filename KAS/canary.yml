@@ -37,13 +37,13 @@ repos:
     commit: "99e728c23eb1478e4af1e27f17a8fe93cfd80295"
 
   meta-canary-bsp:
-     path: "../../meta-canary-bsp"
+     path: "../meta-canary-bsp"
 
   meta-canary-distro:
-    path: "../../meta-canary-distro"
+    path: "../meta-canary-distro"
   
   meta-canary-project:
-    path: "../../meta-canary-project"
+    path: "../meta-canary-project"
     
 #bblayers_conf_header:
 #  standard: |
@@ -61,8 +61,9 @@ local_conf_header:
     SDKMACHINE = "x86_64"
     USER_CLASSES = "buildstats"
     PATCHRESOLVE = "noop"
-    DL_DIR ?= "/home/rog/Desktop/project/down_cache/downloads"
-    SSTATE_DIR ?= "/home/rog/Desktop/project/down_cache/sstate-cache"
+
+    DL_DIR ?= "/home/builder/project/down_cache/downloads"
+    SSTATE_DIR ?= "/home/builder/project/down_cache/sstate-cache"
     
     INHERIT += "image-buildinfo" 
     INHERIT += "buildhistory"

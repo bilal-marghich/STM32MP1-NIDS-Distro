@@ -1,0 +1,21 @@
+# --- Upstream code fetched by kas: never commit, always regenerable ---
+canary/bitbake/
+canary/openembedded-core/
+canary/meta-openembedded/
+canary/meta-st-stm32mp/
+canary/build/
+
+# --- Caches: large, regenerable, must never be committed ---
+down_cache/
+
+# --- kas work-dir artifacts, if kas ever writes here ---
+KAS/build/
+*.lock
+
+# --- Editor / OS noise ---
+.vscode/
+*.swp
+.DS_Store
+
+# --- Stray debug output you've been redirecting to files ---
+*_error.txt
