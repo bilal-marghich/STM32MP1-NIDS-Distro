@@ -37,13 +37,13 @@ repos:
     commit: "99e728c23eb1478e4af1e27f17a8fe93cfd80295"
 
   meta-canary-bsp:
-     path: "/home/rog/Desktop/project/meta-canary-bsp"
+     path: "../../meta-canary-bsp"
 
   meta-canary-distro:
-    path: "/home/rog/Desktop/project/meta-canary-distro"
+    path: "../../meta-canary-distro"
   
   meta-canary-project:
-    path: "/home/rog/Desktop/project/meta-canary-project"
+    path: "../../meta-canary-project"
     
 #bblayers_conf_header:
 #  standard: |
