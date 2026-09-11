@@ -27,5 +27,5 @@ RUN groupadd --gid ${USER_GID} ${USERNAME} \
  
 USER ${USERNAME}
 
-# Set working directory
+# Set working directory0
 WORKDIR /home/builder/project
