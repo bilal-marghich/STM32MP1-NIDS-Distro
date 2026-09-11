@@ -12,7 +12,9 @@ RUN apt-get update && apt-get install -y nano \
     && rm -rf /var/lib/apt/lists/*
  
 RUN locale-gen en_US.UTF-8
+
 RUN pip3 install kas
+
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 
 # Non-root build user — bitbake refuses to run as root
