@@ -1,0 +1,9 @@
+services:
+  deploy_dir_server:
+    image: nginx:alpine
+    container_name: canary-deploy-server
+    ports:
+      - "8080:80"
+    volumes:
+      - ../canary/build/tmp-glibc/deploy:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
