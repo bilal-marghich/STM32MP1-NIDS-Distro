@@ -19,3 +19,5 @@ KAS/build/
 
 # --- Stray debug output you've been redirecting to files ---
 *_error.txt
+
+u-boot_bootstage_report.txt
